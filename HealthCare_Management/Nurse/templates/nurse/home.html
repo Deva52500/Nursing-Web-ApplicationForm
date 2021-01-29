@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <title> Applicant Details </title>
+
+  </head>
+  <body>
+
+  <!-- Navigation Bar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">HealthCare Center</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/viewDetails">Details </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+
+<!-- Table -->
+
+<div class="container my-4">
+
+    <table class="table">
+  <thead>
+    <tr>
+
+      <th scope="col">First Name</th>
+      <th scope="col">Last Name</th>
+      <th scope="col">Age</th>
+      <th scope="col">Experience</th>
+        <th scope="col">Language Level</th>
+        <th scope="col">Qualification</th>
+        <th scope="col">CV</th>
+
+    </tr>
+  </thead>
+  <tbody>
+  {% for i in nurse %}
+    <tr>
+
+      <td>{{i.first_name}}</td>
+      <td>{{i.last_name}}</td>
+      <td>{{i.age}}</td>
+      <td>{{i.experience}}</td>
+        <td>{{i.language}}</td>
+        <td>{{i.qualification}}</td>
+        <td>
+          <a href="{{i.cv.url}}" class ="btn btn-primary btn-sm" target="_blank">
+          Download CV
+          </a>
+        </td>
+
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+
+
+
+</body>
+</html>
