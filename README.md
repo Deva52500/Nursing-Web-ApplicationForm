@@ -1,9 +1,11 @@
 # SILREAL
+
 1. Install dependencies:
 
-Install Python 3.8.3
-Django: pip install django
+Python 3.8.3
 Database Management System: Postgresql 
+Django: pip install django
+psycopg2: pip install psycopg2
 
 2. Connecting database:
 
@@ -26,3 +28,4 @@ python manage.py runserver
 4. Access to website: 
 
 Server will run at http://127.0.0.1:8000/
+
