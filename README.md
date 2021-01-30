@@ -3,7 +3,7 @@
 1. Install dependencies:
 
 Python 3.8.3
-Database Management System: Postgresql 
+Database Management System: Postgresql
 Django: pip install django
 psycopg2: pip install psycopg2
 
