@@ -1,4 +1,4 @@
-# Nursing Application
+# Nursing Web Application
 
 1. Install dependencies:
 
