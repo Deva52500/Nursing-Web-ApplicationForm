@@ -1,4 +1,4 @@
-# SILREAL
+# Nursing Application
 
 1. Install dependencies:
 
