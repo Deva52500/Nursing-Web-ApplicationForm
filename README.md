@@ -1,4 +1,4 @@
-# Nursing Web Application
+# SILREAL (Health Care Management System)
 
 1. Install dependencies:
 
